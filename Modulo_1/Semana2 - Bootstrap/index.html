@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5de81dda27.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- MODAL -->
+    <div class="modal" tabindex="-1" id="modal_confirm">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Confirmar reserva.</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>Você tem certeza que deseja reservar essa aventura?</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+            <button type="button" class="btn btn-primary">Reservar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- MODAL -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html"><img class="w-25" src="/img/Favicon.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+            <li class="nav-item text-white">
+            <a class="nav-link text-white" href="#">Contato</a>
+            </li>
+            <li class="nav-item dropdown text-white">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Aventuras
+            </a>
+            <ul class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider text-white"></li>
+                <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+            </ul>
+            </li>
+            
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success text-white" type="submit">Search</button>
+        </form>
+        </div>
+    </div>
+    </nav>
+    <div class="container d-flex justify-content-around p-5">
+        <div class="card" style="width: 18rem;">
+            <img src="/img/t2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Salto Pendulo | Urubici/SC</h5>
+                <p class="card-text">O Salto de Pêndulo é uma experiência que se tornou enorme case de sucesso da empresa Natural Extremo.
+                    Somos referência no mercado pelo atendimento personalizado, pela segurança e pelas nossas aventuras extremas.
+                    Somos capazes de realizar saltos que transformam a vida dos nossos clientes e sentimentos orgulhos de fazer parte desta positiva e incrível mudança.</p>
+                <a onclick="mostrar_modal()"   href="#" class="btn btn-primary">Reservar</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="http://blog.competizionemr.com.br/wp-content/uploads/2017/01/motociclista-trilha-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Trilha de Moto | Lages/SC</h5>
+                <p class="card-text">Realização de trilhas de moto, jeepe ou quadriciclos no município, acontece em todos os finais de semana. Frequentemente trilheiros da região vem em busca de aventura, pois o relevo favorece para a pratica do esporte. Normalmente no mês de julho acontece o Enduro de Regularidade (motos).</p>
+                <a onclick="mostrar_modal()"  href="#" class="btn btn-primary">Reservar</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMNqLwC22fWAHRrUpizDCnHIRUwVc_t4B9aA&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Trilha Lagoinha do Leste | Florianópolis/SC</h5>
+                <p class="card-text">Lagoinha do Leste é a praia onde se chega e que só tem acesso a pé ou por embarcação. Pelas trilhas existem dois caminhos e este que é bem cuidado começa na Praia de Pântano do Sul, onde existe uma comunidade de pescadores.
+                    Em cerca de 40 minutos de caminhada já se chega ao topo do morro, onde é possível avistar tanto a praia quanto a lagoa que existe no local. </p>
+                <a onclick="mostrar_modal()" href="#" class="btn btn-primary">Reservar</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Salto Pendulo | Urubici/SC</h5>
+                <p class="card-text">Em um ambiente aconchegante, de muito contato com a natureza, o paraquedismo é uma atividade extremamente segura e possível.
+                    Nosso espaço está situado em Tijucas-SC, em meio a praias maravilhosas, montanhas, cachoeiras, campos, trilhas, dentre outras belezas naturais, e ao mesmo tempo muito próximos a centros urbanos como Florianópolis e Balneário Camboriú</p>
+                <a onclick="mostrar_modal()"  href="#" class="btn btn-primary">Reservar</a>
+            </div>
+        </div>
+    </div>
+    <footer class="p-1 bg-secondary text-white text text-center">
+        <div class="container">
+            <div class="row p-0">
+                <p>By: Rodrigo Rosa</p>
+                <ul class="socials d-flex justify-content-center m-0">
+                    <li><a href=""><i class="fa fa-facebook text-white form-control-lg "></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter text-white form-control-lg"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram text-white form-control-lg"></i></a></li>
+                    <li><a href=""><i class="fa fa-whatsapp text-white form-control-lg"></i></a></li>
+                </ul>
+                <div class="footer-bottom m-0">
+                    <p>Desenvolvido com Amor &#x2665</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        function mostrar_modal(){
+        let el = document.getElementById('modal_confirm');
+        let modal_modal = new bootstrap.Modal(el);
+        modal_modal.show(); 
+        }
+
+    </script>
+
+</body>
+</html>
