@@ -1,0 +1,124 @@
+@import 'navbar';
+@import 'colors';
+
+*{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    color: $corPrimaria;
+    padding: 20px;
+    font-size: 50px;
+}
+
+
+main{
+    .evento{
+
+        h2{
+            font-size: 5em;
+        }
+        img{
+            width: 80%;
+        }
+        p{
+            font-size: 2em;
+        }
+        
+    }
+    .main-title{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 2em;
+    }
+    .container-card{
+        margin: 6em;
+    }
+    .row-card{
+        display:flex;
+        gap: 2em;
+        margin: 2em;
+    } 
+    .card{
+        text-align: center;
+        border-style: solid;
+        padding: 1em;
+        border-radius: 1em;
+        height: 25em;
+        width: 20em;
+        img{
+            width: 100%;
+        }
+        .card-body{
+            margin: 1em;
+        }
+        p{
+            margin: .5em;
+        }
+        .ver-mais{
+            margin: 1em;
+            padding: 0.5em;
+        }
+    }
+}
+
+
+.row-form{
+    background-color: $corSecundaria ;
+    h2{
+        text-align: center;
+        padding: 1em;
+        font-size: 3em;
+    }
+}
+.formulario{
+    padding: 1em;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+    .descrição{
+        align-content: center;
+    }
+    input{
+        width: 20em;
+        height: 1.5em;
+    }
+}   
+
+footer{
+    background-color: rgb(49, 44, 44);
+    color: #ffff;
+    display: flex;
+    padding-left: 5em;
+    
+    .contato{
+        padding: 1.5em;
+        
+    ul{
+        list-style: none;
+    }
+
+    }
+
+    .footer-content{
+        text-align: center;
+        margin-left: 29em;
+    }
+    .socials li a i{
+        color: #fff;
+        margin: 5px;
+        font-size: 30px;
+    }
+    
+    .socials{
+        display:inline-flex;
+        list-style: none;
+    }
+}  
+
+
+
+
+
