@@ -1,0 +1,38 @@
+{
+  "listaComidas": [
+    {
+       "img":"../assets/img/hamb.jpeg",
+       "title":"Hamburger Autraliano",
+       "content":"Pão australiano, hambuguer, ovo, queijo cheader e alface"
+    },
+    {
+       "img":"../assets/img/pizza.png",
+       "title":"pizza",
+       "content":"pizza teste"
+    },
+    {
+       "img":"../assets/img/esfirra.jpeg",
+       "title":"esfirra",
+       "content":"esfirra teste"
+    }
+ ],
+ 
+ "listaBebidas" :[
+  {
+     "img":"../assets/img/coca.jpeg",
+     "title":"Coca-cola",
+     "content":"Refrigerante Coca-cola"
+  },
+  {
+     "img":"../assets/img/suco.png",
+     "title":"Suco de Laranja",
+     "content":"Suca Natural 100% Laranja"
+  },
+  {
+     "img":"../assets/img/agua.jpeg",
+     "title":"Água",
+     "content":"Garrafa de água 250ml"
+  }
+] 
+}
+
