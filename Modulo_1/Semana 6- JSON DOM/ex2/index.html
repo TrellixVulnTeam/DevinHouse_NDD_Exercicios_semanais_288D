@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h3>Iserir o primeiro número:</h3>
+    <input id="num1" type="text">
+    <h3>Inserir o segundo número:</h3>
+    <input id="num2" type="text">
+    <h3>Escolha uma operação:</h3>
+    <select name="select" id="operacao">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button onclick="calcular()" type="submit">Calcular</button>
+    <button onclick="zerar()" >zerar</button>
+
+    <p id="result">resultado</p>
+    <script src="./index.js"></script>
+</body>
+</html>
