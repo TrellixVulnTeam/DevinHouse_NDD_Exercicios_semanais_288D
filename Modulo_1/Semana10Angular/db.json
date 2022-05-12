@@ -1,0 +1,71 @@
+{
+  "listaComidas": [
+    {
+       "id":1,
+       "img":"../assets/img/pasteis/camarao.jpg",
+       "title":"Camarão",
+       "content":"Creme de Camarão com Queijo Mussarela",
+       "valor" : 25
+    },
+    {
+      "id":2,
+       "img":"./assets/img/pasteis/calabersaChader.jpg",
+       "title":"Calabresa com Cheader",
+       "content":"Calabresa com Mussarela e Cheader",
+       "valor": 20
+    },
+    {
+      "id":3,
+       "img":"../assets/img/pasteis/frangoCatupiry.jpg",
+       "title":"Frango Catupiry",
+       "content":"Frango desfiado com tempero especial com Catupiry",
+       "valor": 20
+    },
+    {
+      "id":4,
+      "img":"../assets/img/pasteis/carneOvo.jpg",
+      "title":"Carne com Ovo",
+      "content":"Carne moída refogada com vegetais, com ovo",
+      "valor" : 20
+   },
+   {
+      "id":5,
+      "img":"./assets/img/pasteis/generico.jpg",
+      "title":"Vegetariano",
+      "content":"Brocolis, tomate, cebola e queijo Mussarella",
+      "valor": 20
+   },
+   {
+      "id":6,
+      "img":"../assets/img/pasteis/generico.jpg",
+      "title":"Frango Bacon",
+      "content":"Frango desfiado com tempero especial com Bacon",
+      "valor": 20
+   }
+ ],
+ 
+ "listaBebidas" :[
+  {
+     "id":10,
+     "img":"../assets/img/coca.jpeg",
+     "title":"Coca-cola",
+     "content":"Refrigerante Coca-cola",
+     "valor": 5
+  },
+  {
+      "id":11,
+     "img":"../assets/img/suco.png",
+     "title":"Suco de Laranja",
+     "content":"Suca Natural 100% Laranja",
+     "valor": 7
+  },
+  {
+     "id":12,
+     "img":"../assets/img/agua.jpeg",
+     "title":"Água",
+     "content":"Garrafa de água 250ml",
+     "valor": 6
+  }
+]
+}
+

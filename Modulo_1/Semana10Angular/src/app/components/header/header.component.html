@@ -1,0 +1,20 @@
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a routerLink="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <img class="w-25" src="../assets/img/logo.png" alt="">
+      <h3 class="text-center"></h3>
+    </a>
+    <ul class="nav nav-pills mt-4">
+      <li class="nav-item"><a routerLink="/comidas" class="nav-link" routerLink="sobrenos">Sobre Nós</a></li>
+      <li class="nav-item bg-light">
+        <button type="button" class="btn btn-primary position-relative" routerLink="pedido">
+          Pedido
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            {{totalItensPedido()}}
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+      </li>
+    </ul>
+  </header>
+</div>

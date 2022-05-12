@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <h2 class="text-center">
+            Itens do seu Pedido:
+        </h2>
+        <p *ngIf="pedidoList.length === 0">Não há pedidos adicionados.</p>
+    </div>
+    <hr>
+    <div class="row">
+        <div *ngFor="let item of pedidoList" class="card m-3 p-0" style="width: 18rem;">
+            <div class="card-body bg-light">
+                <h5 class="card-title">{{item.title}}</h5>
+                <img src="{{item.img}}" class="card-img-top" alt="">
+                <p class="card-text mt-2 mb-2">{{item.content}}</p>
+
+
+                <div class="mb-3 d-flex border">
+                    <div class="container border-end mt-1">
+                        <label for="quantide">Valor:</label>
+                        <p class="bg-light text-success fw-bold">R${{item.valor}},00</p>
+                    </div>
+                    <div class="container">
+                        <label for="quantide">Quantidade:</label>
+                        <input type="number" class="form-control w-100" placeholder="0">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <a class="btn btn-danger w-75 mx-auto" (click)="removerPedido(item)">Remover</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto d-block mt-5">
+        <button class="btn btn-danger mx-auto d-block p-2"(click)="limparLista()">Remover tudo</button>
+    </div>
+    <div class="container mx-auto d-block mt-5">
+        <button class="btn btn-success mx-auto d-block p-2" routerLink="/pedido">Avançar</button>
+    </div>
+</div>
