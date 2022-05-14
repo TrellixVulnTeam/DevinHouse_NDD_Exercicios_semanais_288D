@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Digite a baixo suas tarefas:</h2>
+    <input type="text" [(ngModel)]="toDo">
+    <button (click)="addTarefa()" >inserir</button>
+</div>
+
+<div class="container">
+    <ul>
+        <p *ngIf="tarefas.length == 0"> Sem tarefas adionadas</p>
+        <li *ngFor="let tarefa of tarefas" > {{tarefa}}</li>
+    </ul>
+</div>

@@ -1,0 +1,13 @@
+<select name="" id=""  [(ngModel)] = "generoEscolhido">
+    <option value="">Selecione um Gênero</option>
+    <option *ngFor="let genero of arrayGeneros" value="{{genero}}">
+        {{genero}}
+    </option>
+</select>
+
+<div [ngSwitch]="generoEscolhido">
+    <p *ngSwitchCase="'Terror'">massacre da serra elétrica</p>
+    <p *ngSwitchCase="'Comedia'">todo mundo em panico</p>
+    <p *ngSwitchCase="'Acao'">duro de matar</p>
+    <p *ngSwitchCase="'Drama'">a procura da felicidade</p>
+</div>

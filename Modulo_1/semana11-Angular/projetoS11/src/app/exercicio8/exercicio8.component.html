@@ -1,0 +1,14 @@
+
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <ul class="nav nav-pills">
+    <li (click)="page = 'home'" class="nav-item"><a href="#" class="nav-link">Home</a></li>
+    <li  class="nav-item"><a (click)="page = 'preco'" href="#" class="nav-link">Preços</a></li>
+    <li (click)="page = 'Informacoes'"  class="nav-item"><a href="#" class="nav-link">Informações</a></li>
+    </ul>
+</header>
+
+<div [ngSwitch]="page" >
+    <h2 *ngSwitchDefault="'home'">Estou na página de Home</h2>
+    <h2 *ngSwitchCase="'preco'" >Estou na página de Preços</h2>
+    <h2 *ngSwitchCase="'Informacoes'" >Estou na página de Informações</h2>
+</div>
